@@ -1,0 +1,39 @@
+pouyasazan_examples_rest_get_peoples:
+    path:     /peoples
+    defaults: { _controller: PouyasazanExamplesBundle:Rest/People:getPeoples }
+    methods:  [GET]
+
+pouyasazan_examples_rest_get_people:
+    path:     /people/{id}
+    defaults: { _controller: PouyasazanExamplesBundle:Rest/People:getPeople }
+    methods:  [GET]
+
+pouyasazan_examples_rest_post_people:
+    path:     /people
+    defaults: { _controller: PouyasazanExamplesBundle:Rest/People:postPeople }
+    methods:  [POST]
+
+pouyasazan_examples_rest_put_people:
+    path:     /people/{id}
+    defaults: { _controller: PouyasazanExamplesBundle:Rest/People:putPeople }
+    methods:  [PUT]
+
+pouyasazan_examples_rest_delete_people:
+    path:     /people/{id}
+    defaults: { _controller: PouyasazanExamplesBundle:Rest/People:deletePeople }
+    methods:  [DELETE]
+
+# User
+pouyasazan_examples_rest_users:
+    path:     /users
+    defaults: { _controller: PouyasazanExamplesBundle:Rest/User:getUsers }
+    methods:  [GET]
+pouyasazan_examples_rest_user:
+    path:     /user/{id}
+    defaults: { _controller: PouyasazanExamplesBundle:Rest/User:getUser }
+    methods:  [GET]
+pouyasazan_examples_rest_register:
+    path:     /register
+    defaults: { _controller: PouyasazanExamplesBundle:Rest/User:register }
+    methods:  [POST]
+

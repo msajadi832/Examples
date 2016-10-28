@@ -1,0 +1,25 @@
+pouyasazan_examples_rest :
+    type : rest
+    resource : "@PouyasazanExamplesBundle/Resources/config/routing/api.yml"
+    prefix : /rest
+
+pouyasazan_examples_homepage:
+    path:     /
+    defaults: { _controller: PouyasazanExamplesBundle:Default:index }
+
+pouyasazan_examples_peoples:
+    path:     /peoples_api/{page}
+    defaults: { _controller: PouyasazanExamplesBundle:Api/Archive:list, page: 0 }
+
+pouyasazan_examples_books:
+    path:     /books/{id}
+    defaults: { _controller: PouyasazanExamplesBundle:Api/Archive:books }
+
+pouyasazan_examples_download:
+    path:     /download
+    defaults: { _controller: PouyasazanExamplesBundle:Api/Archive:download }
+
+pouyasazan_examples_me_user:
+    path:     /user_me/{id}
+    defaults: { _controller: PouyasazanExamplesBundle:Default:getUser }
+    methods:  [GET]

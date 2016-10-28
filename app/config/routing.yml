@@ -1,0 +1,11 @@
+fos_user:
+    resource: "@FOSUserBundle/Resources/config/routing/all.xml"
+
+pouyasazan_examples:
+    resource: "@PouyasazanExamplesBundle/Resources/config/routing.yml"
+    prefix:   /
+
+#pouyasazan_task:
+#    resource: "@PouyasazanTaskBundle/Controller/"
+#    type:     annotation
+#    prefix:   /

@@ -1,0 +1,8 @@
+services:
+    pouyaszan.registration.form.type:
+        class: Pouyasazan\ExamplesBundle\Form\RegistrationType
+        tags:
+            - { name: form.type, alias: pouyaszan_user_registration }
+#    pouyasazan_examples.example:
+#        class: Pouyasazan\ExamplesBundle\Example
+#        arguments: ["@service_id", "plain_value", %parameter%]
